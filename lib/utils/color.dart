@@ -6,6 +6,8 @@ const secondaryColor = Color(0xff0F0E13);
 const teritaryColor = Color(0xff8896AB);
 const whiteColor = Color(0xffFFFFFF);
 
+//text color
+const textSecondary = Color(0xff787486);
 //background color
 const mainBgColor = Color(0xffF2F4F7);
 const secondaryBgColor = Color(0xffF7F8F9);
