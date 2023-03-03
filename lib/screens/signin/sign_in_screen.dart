@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui/utils/color.dart';
-import 'package:ui/widget/app_bar_custom.dart';
+import 'package:ui/screens/signin/signin_app_bar_custom.dart';
 import 'package:ui/widget/btn_widget.dart';
 
 import 'package:ui/widget/text_field_custom.dart';
@@ -13,7 +13,7 @@ class SignInScreen extends StatefulWidget {
 }
 
 class _SignInScreenState extends State<SignInScreen> {
-  final _formKey = GlobalKey<FormState>();
+  // final _formKey = GlobalKey<FormState>();
   bool _isObscure = true;
   bool? _checkBoxValue = false;
   @override
@@ -23,7 +23,7 @@ class _SignInScreenState extends State<SignInScreen> {
     return Scaffold(
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(safeAreaHeight + 64),
-        child: AppBarCustom(safeAreaHeight: safeAreaHeight, theme: theme),
+        child: SignInAppBarCustom(safeAreaHeight: safeAreaHeight, theme: theme),
       ),
       body: Container(
         padding: const EdgeInsets.only(
@@ -54,7 +54,7 @@ class _SignInScreenState extends State<SignInScreen> {
             ),
             //form start
             Form(
-              key: _formKey,
+              // key: _formKey,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -147,7 +147,9 @@ class _SignInScreenState extends State<SignInScreen> {
 
             //login button
             Btn(
-              btnFunctin: () {},
+              btnFunctin: () {
+                Navigator.pushNamed(context, 'home_screen');
+              },
               title: 'Login',
               bgColor: mainColor,
             ),

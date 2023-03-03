@@ -34,14 +34,15 @@ ThemeData lightTheme = ThemeData(
       fontSize: 16,
       fontWeight: FontWeight.w400,
       color: secondaryColor,
-      
     ),
     titleMedium: TextStyle(
       fontSize: 18,
-      
       fontWeight: FontWeight.w600,
       color: whiteColor,
-     
+    ),
+    titleSmall: TextStyle(
+      fontSize: 12,
+      fontWeight: FontWeight.w500,
     ),
     bodySmall: TextStyle(
       fontSize: 16,

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ui/utils/color.dart';
 
-class AppBarCustom extends StatelessWidget {
-  const AppBarCustom({
+class SignInAppBarCustom extends StatelessWidget {
+  const SignInAppBarCustom({
     super.key,
     required this.safeAreaHeight,
     required this.theme,

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:ui/screens/home/home_screen.dart';
 import 'package:ui/screens/onBoarding/onBoarding_screen.dart';
-import 'package:ui/screens/sign_in_screen.dart';
+import 'package:ui/screens/signin/sign_in_screen.dart';
 import 'package:ui/screens/splash_screen.dart';
 import 'package:ui/theme/theme_constant.dart';
 
@@ -16,11 +17,12 @@ class TaskUI extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: lightTheme,
-      initialRoute: 'signin_screen',
+      initialRoute: 'home_screen',
       routes: {
         'splash_screen': (context) => const SplashScreen(),
         'onBoarding_screen': (context) => const OnBoardingScreen(),
-        'signin_screen':(context) => const SignInScreen()
+        'signin_screen':(context) => const SignInScreen(),
+        'home_screen':(context) => const HomeScreen(),
       },
     );
   }
