@@ -49,6 +49,7 @@ ThemeData lightTheme = ThemeData(
       fontWeight: FontWeight.w500,
       color: textSecondary,
     ),
+    
    
   ),
   //text style end

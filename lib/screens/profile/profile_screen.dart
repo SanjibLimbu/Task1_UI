@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:ui/screens/profile/account_setting.dart';
+import 'package:ui/screens/profile/app_setting.dart';
+import 'package:ui/screens/profile/more_seeting.dart';
 import 'package:ui/screens/profile/profile_header.dart';
-import 'package:ui/screens/profile/setting_row.dart';
+
 import 'package:ui/utils/color.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -8,6 +11,7 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    TextTheme theme = Theme.of(context).textTheme;
     return Scaffold(
       backgroundColor: whiteColor,
       body: SafeArea(
@@ -17,50 +21,63 @@ class ProfileScreen extends StatelessWidget {
             //header
             const ProfileHeader(),
             //body
-            SingleChildScrollView(
-              child: Column(
-                children: [
-                  const SizedBox(
-                    height: 32,
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.only(
-                      left: 16,
-                      right: 16,
+            Expanded(
+              child: SingleChildScrollView(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const SizedBox(
+                      height: 32,
                     ),
-                    child: Column(
-                      children: const [
-                        //set status
-                        SettingRow(
-                          leadingIcon: 'assets/images/set_status_icon.png',
-                          leadingTitle: 'Set status',
-                          isSetstatus: true,
-                          isTrailingIcon: true,
-                          isTrailingTitle: true,
-                          trailingTitle: 'Online',
-                        ),
-                        SizedBox(
-                          height: 28,
-                        ),
-                        //account
-                        SettingRow(
-                          leadingIcon: 'assets/images/account_icon.png',
-                          leadingTitle: 'Account',
-                          isTrailingIcon: true,
-                        ),
-                        SizedBox(
-                          height: 28,
-                        ),
-                        //activity
-                        SettingRow(
-                          leadingIcon: 'assets/images/activity_icon.png',
-                          leadingTitle: 'Activity',
-                          isTrailingIcon: true,
-                        ),
-                      ],
+                    //account setting
+                    const AccountSetting(),
+
+                    const Divider(
+                      color: gray200,
                     ),
-                  )
-                ],
+
+                    //app setting
+                    const AppSetting(),
+                    const Divider(
+                      color: gray200,
+                    ),
+                    //more setting
+                    const MoreSetting(),
+
+                    //account label
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16),
+                      child: Text(
+                        'Account',
+                        style: Theme.of(context)
+                            .textTheme
+                            .bodySmall!
+                            .copyWith(color: secondaryColor),
+                      ),
+                    ),
+
+                    //log out
+                    Padding(
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 16, vertical: 32),
+                      child: Row(
+                        children: [
+                          Image.asset('assets/images/logout_icon.png'),
+                          const SizedBox(
+                            width: 8,
+                          ),
+                          Text(
+                            'Logout',
+                            style: theme.bodySmall!.copyWith(
+                              fontSize: 14,
+                              color: errorColor,
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
               ),
             )
           ],
