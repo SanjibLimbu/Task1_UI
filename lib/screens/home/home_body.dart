@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:ui/widget/home_app_bar_custom.dart';
-import 'package:ui/screens/home/home_tab_bar_view/home_tab_bar_view_body.dart';
+import 'package:ui/screens/home/home_app_bar_custom.dart';
+
 import 'package:ui/utils/color.dart';
+
+import 'project_tools_tab_bar_view/project_tools_tab_bar_view_body.dart';
 
 class HomeScreenContent extends StatefulWidget {
   const HomeScreenContent({super.key});
@@ -10,7 +12,8 @@ class HomeScreenContent extends StatefulWidget {
   State<HomeScreenContent> createState() => _HomeScreenContentState();
 }
 
-class _HomeScreenContentState extends State<HomeScreenContent> with TickerProviderStateMixin{
+class _HomeScreenContentState extends State<HomeScreenContent>
+    with TickerProviderStateMixin {
   late TabController _tabController;
   @override
   void initState() {
@@ -36,7 +39,7 @@ class _HomeScreenContentState extends State<HomeScreenContent> with TickerProvid
       body: TabBarView(
         controller: _tabController,
         children: const [
-          HomeTabBarView(),
+          ProjectToolsTabBarView(),
           LinearProgressIndicator(
             value: 0.7,
             minHeight: 7,

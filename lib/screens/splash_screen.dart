@@ -29,10 +29,10 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const Expanded(child: SizedBox()),
+            const Spacer(),
             Image.asset('assets/images/lancemeuplogo.png'),
-            const Expanded(child: SizedBox()),
-            Center(
+            const Spacer(),
+            const Center(
               child: Text(
                 'Version 0.0.1',
                 style: TextStyle(

@@ -33,3 +33,10 @@ const gray600 = Color(0xff4D5F7A);
 const gray700 = Color(0xff404F65);
 const gray800 = Color(0xff333F51);
 const gray900 = Color(0xff2A3342);
+
+//notification selected label color
+
+const labelColor = Color(0xffF0FDF4);
+
+//notifcation tab selected bg color
+const tabBgColor = Color(0xff22C55E);

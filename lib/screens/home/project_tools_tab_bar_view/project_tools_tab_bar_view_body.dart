@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:ui/screens/home/home_tab_bar_view/project_members.dart';
-import 'package:ui/screens/home/home_tab_bar_view/project_progress_bar.dart';
-import 'package:ui/screens/home/home_tab_bar_view/project_status.dart';
+import 'package:ui/screens/home/project_tools_tab_bar_view/project_members.dart';
+import 'package:ui/screens/home/project_tools_tab_bar_view/project_progress_bar.dart';
+import 'package:ui/screens/home/project_tools_tab_bar_view/project_status.dart';
+
 import 'package:ui/utils/color.dart';
 
-class HomeTabBarView extends StatelessWidget {
-  const HomeTabBarView({
+class ProjectToolsTabBarView extends StatelessWidget {
+  const ProjectToolsTabBarView({
     super.key,
   });
 

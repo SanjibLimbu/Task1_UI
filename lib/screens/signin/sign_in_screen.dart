@@ -23,7 +23,7 @@ class _SignInScreenState extends State<SignInScreen> {
     return Scaffold(
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(safeAreaHeight + 64),
-        child: SignInAppBarCustom(safeAreaHeight: safeAreaHeight, theme: theme),
+        child: const SignInAppBarCustom( ),
       ),
       body: Container(
         padding: const EdgeInsets.only(

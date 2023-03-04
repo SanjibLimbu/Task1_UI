@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui/screens/home/home_tab_bar_view/member_icon.dart';
+import 'package:ui/screens/home/project_tools_tab_bar_view/member_icon.dart';
 
 class ProjectMembers extends StatelessWidget {
   const ProjectMembers({
