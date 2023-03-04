@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ui/notification/notification_screen.dart';
+import 'package:ui/screens/notification/notification_screen.dart';
 import 'package:ui/screens/home/home_body.dart';
-import 'package:ui/widget/bottom_nav_bar_custom.dart';
+import 'package:ui/screens/profile/profile_screen.dart';
+import 'package:ui/screens/widget/bottom_nav_bar_custom.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -20,10 +21,8 @@ class _HomeScreenState extends State<HomeScreen> {
     const Text(
       'Index 2: Email',
     ),
-   const NotificationScreen(),
-    const Text(
-      'Index 4: Profile',
-    ),
+    const NotificationScreen(),
+    const ProfileScreen()
   ];
 
   @override

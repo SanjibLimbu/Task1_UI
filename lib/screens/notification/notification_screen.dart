@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:ui/notification/all_tab_bar_view/all_tab_bar_view_body.dart';
+import 'package:ui/screens/notification/all_tab_bar_view/all_tab_bar_view_body.dart';
 
-import 'package:ui/notification/notification_app_bar_custom.dart';
-import 'package:ui/notification/notification_data.dart';
-import 'package:ui/notification/notification_tab_custom.dart';
+import 'package:ui/screens/notification/notification_app_bar_custom.dart';
+import 'package:ui/screens/notification/notification_data.dart';
+import 'package:ui/screens/notification/notification_tab_custom.dart';
 import 'package:ui/utils/color.dart';
 
 class NotificationScreen extends StatefulWidget {
@@ -96,6 +96,7 @@ class _NotificationScreenState extends State<NotificationScreen>
           Flexible(
             child: TabBarView(
               controller: _tabController,
+              physics: const NeverScrollableScrollPhysics(),
               children: const [
                 AllTabBarView(),
                 Text('Invites'),
@@ -111,4 +112,3 @@ class _NotificationScreenState extends State<NotificationScreen>
     );
   }
 }
-

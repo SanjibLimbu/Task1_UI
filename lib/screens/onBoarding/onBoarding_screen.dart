@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 import 'package:ui/screens/onBoarding/onBoarding_image_ui.dart';
 import 'package:ui/utils/color.dart';
-import 'package:ui/widget/btn_widget.dart';
+import 'package:ui/screens/widget/btn_widget.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({super.key});

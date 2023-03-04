@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui/notification/notification_data.dart';
+import 'package:ui/screens/notification/notification_data.dart';
 import 'package:ui/utils/color.dart';
 
 class AllTabBarView extends StatelessWidget {

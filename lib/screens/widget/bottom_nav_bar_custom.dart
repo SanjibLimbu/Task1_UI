@@ -65,11 +65,38 @@ class BottomNavBarCustom extends StatelessWidget {
             label: 'Search',
           ),
           //email nav
-          const BottomNavigationBarItem(
-            icon: ImageIcon(
-              AssetImage(
-                'assets/images/email.png',
-              ),
+
+          BottomNavigationBarItem(
+            icon: Stack(
+              clipBehavior: Clip.none,
+              children: [
+                const ImageIcon(
+                  AssetImage(
+                    'assets/images/email.png',
+                  ),
+                ),
+                Positioned(
+                  top: -3,
+                  right: -5,
+                  child: Container(
+                    width: 16,
+                    height: 16,
+                    decoration: const BoxDecoration(
+                      color: mainColor,
+                      shape: BoxShape.circle,
+                    ),
+                    child: const Center(
+                      child: Text(
+                        '3',
+                        style: TextStyle(
+                            fontSize: 11,
+                            fontWeight: FontWeight.w500,
+                            color: whiteColor),
+                      ),
+                    ),
+                  ),
+                )
+              ],
             ),
             label: 'Email',
           ),

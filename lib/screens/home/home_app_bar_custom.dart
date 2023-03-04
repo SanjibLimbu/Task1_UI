@@ -68,6 +68,7 @@ class HomeAppBar extends StatelessWidget {
         controller: _tabController,
         labelColor: mainColor,
         unselectedLabelColor: teritaryColor,
+       
         tabs: const [
           TabCustom(
             iconTab: 'assets/images/work.png',

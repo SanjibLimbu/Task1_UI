@@ -38,16 +38,12 @@ class _HomeScreenContentState extends State<HomeScreenContent>
       ),
       body: TabBarView(
         controller: _tabController,
+        physics: const NeverScrollableScrollPhysics(),
         children: const [
           ProjectToolsTabBarView(),
-          LinearProgressIndicator(
-            value: 0.7,
-            minHeight: 7,
-            color: Colors.greenAccent,
-            backgroundColor: Colors.grey,
-          ),
-          Text('hello3'),
-          Text('hello4'),
+          Text('Chat'),
+          Text('Drive'),
+          Text('Tracker'),
         ],
       ),
     );
