@@ -14,6 +14,7 @@ class HomeAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     TextTheme theme = Theme.of(context).textTheme;
     return AppBar(
+      toolbarHeight: 64,
       backgroundColor: whiteColor,
       elevation: 0,
       shape: const Border(

@@ -9,12 +9,11 @@ class ProfileHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     TextTheme theme = Theme.of(context).textTheme;
+
     return Container(
       padding: const EdgeInsets.only(
-        top: 18,
         left: 16,
         right: 16,
-        bottom: 5,
       ),
       decoration: const BoxDecoration(
         border: Border(
@@ -26,6 +25,9 @@ class ProfileHeader extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          const SizedBox(
+            height: 22,
+          ),
           Text(
             'Profile',
             style: theme.labelMedium!.copyWith(

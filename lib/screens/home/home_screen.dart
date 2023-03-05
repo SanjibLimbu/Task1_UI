@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ui/screens/email/email_screen.dart';
 import 'package:ui/screens/notification/notification_screen.dart';
 import 'package:ui/screens/home/home_body.dart';
 import 'package:ui/screens/profile/profile_screen.dart';
@@ -15,12 +16,12 @@ class _HomeScreenState extends State<HomeScreen> {
   int _selectedIndex = 0;
   static final List<Widget> _widgetOptions = <Widget>[
     const HomeScreenContent(),
-    const Text(
-      'Index 1: Search',
+    const SafeArea(
+      child: Text(
+        ' Search',
+      ),
     ),
-    const Text(
-      'Index 2: Email',
-    ),
+    const EmailScreen(),
     const NotificationScreen(),
     const ProfileScreen()
   ];

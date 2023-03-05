@@ -25,13 +25,13 @@ class ProfileBody extends StatelessWidget {
             const AccountSetting(),
 
             const Divider(
-              color: gray200,
+          
             ),
 
             //app setting
             const AppSetting(),
             const Divider(
-              color: gray200,
+           
             ),
             //more setting
             const MoreSetting(),

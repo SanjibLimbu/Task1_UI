@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui/screens/profile/account_setting.dart';
-import 'package:ui/screens/profile/app_setting.dart';
-import 'package:ui/screens/profile/logout_show_modal.dart';
-import 'package:ui/screens/profile/more_seeting.dart';
+
 import 'package:ui/screens/profile/profile_body.dart';
 import 'package:ui/screens/profile/profile_header.dart';
 

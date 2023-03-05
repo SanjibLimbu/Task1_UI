@@ -29,22 +29,24 @@ class _HomeScreenContentState extends State<HomeScreenContent>
 
   @override
   Widget build(BuildContext context) {
-    double safeAreaHeight = MediaQuery.of(context).padding.top;
+   
     return Scaffold(
       backgroundColor: whiteColor,
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(safeAreaHeight + 100),
+        preferredSize: const Size.fromHeight(100),
         child: HomeAppBar(tabController: _tabController),
       ),
-      body: TabBarView(
-        controller: _tabController,
-        physics: const NeverScrollableScrollPhysics(),
-        children: const [
-          ProjectToolsTabBarView(),
-          Text('Chat'),
-          Text('Drive'),
-          Text('Tracker'),
-        ],
+      body: SafeArea(
+        child: TabBarView(
+          controller: _tabController,
+          physics: const NeverScrollableScrollPhysics(),
+          children: const [
+            ProjectToolsTabBarView(),
+            Text('Chat'),
+            Text('Drive'),
+            Text('Tracker'),
+          ],
+        ),
       ),
     );
   }

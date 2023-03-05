@@ -5,6 +5,7 @@ ThemeData lightTheme = ThemeData(
   brightness: Brightness.light,
   fontFamily: 'Urbanist',
   scaffoldBackgroundColor: mainBgColor,
+  dividerColor: gray200,
 
   //eleavated button
   elevatedButtonTheme: ElevatedButtonThemeData(
@@ -49,8 +50,6 @@ ThemeData lightTheme = ThemeData(
       fontWeight: FontWeight.w500,
       color: textSecondary,
     ),
-    
-   
   ),
   //text style end
 );

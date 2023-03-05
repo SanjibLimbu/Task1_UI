@@ -15,11 +15,11 @@ class ProjectStatus extends StatelessWidget {
   Widget build(BuildContext context) {
     TextTheme theme = Theme.of(context).textTheme;
     return Row(
-      crossAxisAlignment: CrossAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Expanded(
-          flex: 2,
+          flex: 6,
           child: Text(
             title,
             style: theme.labelSmall!.copyWith(
@@ -32,7 +32,7 @@ class ProjectStatus extends StatelessWidget {
           width: 8,
         ),
         Expanded(
-          flex: 4,
+          flex: 9,
           child: Text(
             status,
             style: theme.labelSmall!.copyWith(
