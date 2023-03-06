@@ -144,7 +144,7 @@ class EmailCard extends StatelessWidget {
 
                         //time
                         Flexible(
-                          flex: 2,
+                          flex: 3,
                           child: Text(
                             emailData['time'],
                             style: theme.labelSmall!.copyWith(
