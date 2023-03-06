@@ -110,7 +110,7 @@ class EmailCard extends StatelessWidget {
                       children: [
                         //title
                         Flexible(
-                          flex: 8,
+                          flex: 7,
 
                           //check if email is important or not and use condition accordingly
                           child: emailData['isImportant'] == true
