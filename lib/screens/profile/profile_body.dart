@@ -24,15 +24,11 @@ class ProfileBody extends StatelessWidget {
             //account setting
             const AccountSetting(),
 
-            const Divider(
-          
-            ),
+            const Divider(),
 
             //app setting
             const AppSetting(),
-            const Divider(
-           
-            ),
+            const Divider(),
             //more setting
             const MoreSetting(),
 
@@ -49,27 +45,32 @@ class ProfileBody extends StatelessWidget {
             ),
 
             //log out
+
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 32),
-              child: GestureDetector(
-                onTap: () {
+              child: TextButton.icon(
+                style: TextButton.styleFrom(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 0,
+                    vertical: 0,
+                  ),
+                ),
+                onPressed: () {
                   //show modal after clicking logout
                   logOutShowModal(context);
                 },
-                child: Row(
-                  children: [
-                    Image.asset('assets/images/logout_icon.png'),
-                    const SizedBox(
-                      width: 8,
-                    ),
-                    Text(
-                      'Logout',
-                      style: theme.bodySmall!.copyWith(
-                        fontSize: 14,
-                        color: errorColor,
-                      ),
-                    )
-                  ],
+                icon: const ImageIcon(
+                  AssetImage(
+                    'assets/images/logout_icon.png',
+                  ),
+                  color: errorColor,
+                ),
+                label: Text(
+                  'Logout',
+                  style: theme.bodySmall!.copyWith(
+                    fontSize: 14,
+                    color: errorColor,
+                  ),
                 ),
               ),
             ),

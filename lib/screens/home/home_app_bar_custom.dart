@@ -29,42 +29,45 @@ class HomeAppBar extends StatelessWidget {
         padding: EdgeInsets.only(
           top: MediaQuery.of(context).padding.top,
         ),
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.start,
-          children: [
-            Image.asset(
-              'assets/images/legoIcon.png',
-              height: 32,
-              width: 32,
-              fit: BoxFit.fill,
+        child: TextButton.icon(
+          onPressed: () {},
+          
+          style: TextButton.styleFrom(
+            
+          
+          
+            padding: const EdgeInsets.only(
+              left: 0,
+              bottom: 11,
             ),
-            TextButton(
-              onPressed: () {},
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Text(
-                    'Lancemeup',
-                    style: theme.labelMedium!.copyWith(
-                      fontSize: 16,
-                    ),
-                  ),
-                  const SizedBox(
-                    width: 8,
-                  ),
-                  const Icon(
-                    Icons.expand_more,
-                    color: secondaryColor,
-                  )
-                ],
+          ),
+          label: Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Text(
+                'Lancemeup',
+                style: theme.labelMedium!.copyWith(
+                  fontSize: 16,
+                ),
               ),
-            ),
-          ],
+              const SizedBox(
+                width: 8,
+              ),
+              const Icon(
+                Icons.expand_more,
+                color: secondaryColor,
+              )
+            ],
+          ),
+          icon: Image.asset(
+            'assets/images/legoIcon.png',
+            height: 32,
+            width: 32,
+          ),
         ),
       ),
       bottom: TabBar(
-        padding: const EdgeInsets.symmetric(vertical: 0),
+    
         isScrollable: true,
         indicatorColor: mainColor,
         indicatorWeight: 2,

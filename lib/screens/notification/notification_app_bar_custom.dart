@@ -24,9 +24,7 @@ class NotificationAppBarCustom extends StatelessWidget {
       ),
       actions: [
         IconButton(
-          onPressed: () {
-            Navigator.pop(context);
-          },
+          onPressed: () {},
           icon: const Icon(
             Icons.more_vert_rounded,
             color: secondaryColor,
