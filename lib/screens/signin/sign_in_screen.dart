@@ -21,6 +21,7 @@ class _SignInScreenState extends State<SignInScreen> {
     double safeAreaHeight = MediaQuery.of(context).padding.top;
     TextTheme theme = Theme.of(context).textTheme;
     return Scaffold(
+      resizeToAvoidBottomInset : false,
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(safeAreaHeight + 64),
         child: const SignInAppBarCustom( ),
@@ -81,7 +82,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   const SizedBox(
                     height: 4,
                   ),
-
+        
                   //password field
                   TextFieldCustom(
                     hintText: 'password',
@@ -144,7 +145,7 @@ class _SignInScreenState extends State<SignInScreen> {
             ),
             //form end
             const Expanded(child: SizedBox()),
-
+        
             //login button
             Btn(
               btnFunctin: () {

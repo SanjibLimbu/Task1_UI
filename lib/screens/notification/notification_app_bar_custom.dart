@@ -17,6 +17,7 @@ class NotificationAppBarCustom extends StatelessWidget {
           width: 1,
         ),
       ),
+      leadingWidth: 0,
       title: Text(
         'Notification',
         style: theme.labelMedium!.copyWith(fontSize: 18),

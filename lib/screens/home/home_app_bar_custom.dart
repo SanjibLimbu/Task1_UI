@@ -23,6 +23,7 @@ class HomeAppBar extends StatelessWidget {
           width: 1,
         ),
       ),
+      leadingWidth: 0,
       title: Container(
         height: 64,
         padding: EdgeInsets.only(
@@ -30,12 +31,13 @@ class HomeAppBar extends StatelessWidget {
         ),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
             Image.asset(
               'assets/images/legoIcon.png',
               height: 32,
               width: 32,
-              fit: BoxFit.cover,
+              fit: BoxFit.fill,
             ),
             TextButton(
               onPressed: () {},
@@ -69,7 +71,6 @@ class HomeAppBar extends StatelessWidget {
         controller: _tabController,
         labelColor: mainColor,
         unselectedLabelColor: teritaryColor,
-       
         tabs: const [
           TabCustom(
             iconTab: 'assets/images/work.png',

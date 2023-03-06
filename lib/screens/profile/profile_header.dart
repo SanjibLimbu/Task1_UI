@@ -26,7 +26,7 @@ class ProfileHeader extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const SizedBox(
-            height: 22,
+            height: 20,
           ),
           Text(
             'Profile',
