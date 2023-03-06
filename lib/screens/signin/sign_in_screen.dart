@@ -21,10 +21,10 @@ class _SignInScreenState extends State<SignInScreen> {
     double safeAreaHeight = MediaQuery.of(context).padding.top;
     TextTheme theme = Theme.of(context).textTheme;
     return Scaffold(
-      resizeToAvoidBottomInset : false,
+      resizeToAvoidBottomInset: false,
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(safeAreaHeight + 64),
-        child: const SignInAppBarCustom( ),
+        child: const SignInAppBarCustom(),
       ),
       body: Container(
         padding: const EdgeInsets.only(
@@ -82,7 +82,7 @@ class _SignInScreenState extends State<SignInScreen> {
                   const SizedBox(
                     height: 4,
                   ),
-        
+
                   //password field
                   TextFieldCustom(
                     hintText: 'password',
@@ -126,7 +126,7 @@ class _SignInScreenState extends State<SignInScreen> {
                           fontSize: 14,
                         ),
                       ),
-                      const Expanded(child: SizedBox()),
+                      const Spacer(),
                       //forgot password navigation
                       TextButton(
                         onPressed: () {},
@@ -145,7 +145,7 @@ class _SignInScreenState extends State<SignInScreen> {
             ),
             //form end
             const Expanded(child: SizedBox()),
-        
+
             //login button
             Btn(
               btnFunctin: () {
@@ -159,19 +159,27 @@ class _SignInScreenState extends State<SignInScreen> {
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  "Don't have an account?",
-                  style: theme.labelSmall!.copyWith(
-                    fontWeight: FontWeight.w600,
-                    color: teritaryColor,
+                Flexible(
+                  flex: 4,
+                  child: Text(
+                    "Don't have an account?",
+                    style: theme.labelSmall!.copyWith(
+                      fontWeight: FontWeight.w600,
+                      color: teritaryColor,
+                    ),
                   ),
                 ),
-                Text(
-                  "Sign up?",
-                  style: theme.labelSmall!.copyWith(
-                    fontWeight: FontWeight.w600,
-                    color: mainColor,
+                
+                Flexible(
+                  flex: 2,
+                  child: Text(
+                    "Sign up?",
+                    style: theme.labelSmall!.copyWith(
+                      fontWeight: FontWeight.w600,
+                      color: mainColor,
+                    ),
                   ),
                 )
               ],
