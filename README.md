@@ -1,16 +1,89 @@
-# ui
 
-A new Flutter project.
+# Task 1: UI Clone
 
-## Getting Started
+UI clone of Lancemeup
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Project Environment
+
+`flutter: '3.7.6'`
+
+`dart: 2.19.3`
+
+`smooth_page_indicator: ^1.0.1`
+
+`percent_indicator: ^4.2.2`
+
+
+
+## Code flow
+
+```
+└──lib/
+    └──screens/
+    |   ├── email/
+    |   |   ├──email_card/
+    |   |   └──email screen   
+    |   ├── home/
+    |   |   ├──project tools tab bar view/
+    |   |   └──home screen
+    |   ├── notification/
+    |   |   ├──all tab bar view/
+    |   |   └──notification screen   
+    |   ├── onBoarding/
+    |   |   └──OnBorading screen  
+    |   ├── profile/
+    |   |   └──Profile screen    
+    |   ├── signin/
+    |   |   └──signin screen 
+    |   └── widget/           
+    ├── theme/   
+    ├── utils/
+    |   └── color.dart
+    ├── viewModel/
+    |   ├── email data
+    |   └── notification data
+    └── main.dart
+
+        
+```    
+   
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/SanjibLimbu/Task1_UI.git
+```
+
+Go to the project directory
+
+```bash
+  cd Task1_UI
+  cd UI
+```
+
+Install dependencies
+
+```bash
+  flutter pub get
+```
+
+Start the app
+
+```bash
+  flutter run
+```
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+## Authors
+
+- [@Sanjib Limbu](https://www.github.com/SanjibLimbu)
+

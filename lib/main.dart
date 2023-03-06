@@ -17,7 +17,7 @@ class TaskUI extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: lightTheme,
-      initialRoute: 'home_screen',
+      initialRoute: 'splash_screen',
       routes: {
         'splash_screen': (context) => const SplashScreen(),
         'onBoarding_screen': (context) => const OnBoardingScreen(),
